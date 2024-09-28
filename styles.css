@@ -15,35 +15,59 @@ body {
 
 /* Header and Footer Styles */
 .header {
-    background-color: #444444; /* Dark gray background for the header */
-    color: white; /* White text color */
-    text-align: center; /* Centers text */
-    padding: 20px; /* Adds padding inside the header */
+    background-color: #444444;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 .header h1 {
-    font-size: 3em; /* Increases font size for the main title */
-    margin-bottom: 10px; /* Adds space below the title */
-    letter-spacing: 2px; /* Increases space between letters */
+    font-size: 3em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 
 .header p {
-    font-size: 1.2em; /* Sets the font size for the header paragraph */
-    margin: 0; /* Removes default margin */
+    font-size: 1.2em;
+    margin: 0;
 }
 
 /* Sidebar Styles */
 .sidebar {
     background-color: #333333;
     color: white;
-    padding: 10px;
-    vertical-align: top;
-    width: 20%;
+    padding: 20px;
+    width: 250px;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 20px 0;
 }
 
 .sidebar a {
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 5px;
 }
 
 /* Main content table styles */

@@ -134,3 +134,38 @@ body {
     font-size: 1.2em;
     color: #444;
 }
+
+.footer {
+    background-color: #444444;
+    color: #cccccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.hover-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.hover-img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .header h1 {
+        font-size: 2.2em;
+    }
+}
